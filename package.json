@@ -1,0 +1,26 @@
+{
+  "name": "pagination",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "homepage": "https://github.com/Kinder0102/pagination#readme",
+  "bugs": {
+    "url": "https://github.com/Kinder0102/pagination/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kinder0102/pagination.git"
+  },
+  "license": "ISC",
+  "author": "Kinder0102",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "esbuild ./src/index.js --bundle --minify --outfile=./dist/pagination.min.js"
+  },
+  "dependencies": {
+    "js-common": "github:Kinder0102/js-common"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.0"
+  }
+}
