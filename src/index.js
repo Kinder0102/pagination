@@ -284,6 +284,7 @@ class ButtonMode {
 
   #createButton(text, className, onclick) {
     const button = this.#createElement('button', className)
+    button.type = 'button'
     if (/<[a-z]+\d?(\s+[\w-]+=("[^"]*"|'[^']*'))*\s*\/?>|&#?\w+;/i.test(text)) {
       button.innerHTML = text
     } else {
