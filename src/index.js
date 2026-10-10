@@ -35,6 +35,7 @@ import { Plugin } from 'js-common/js-plugin'
 const PREFIX = 'page'
 const CLASS_NAME = 'pagination'
 const INIT_CLASS_NAME = `${CLASS_NAME}-initialized`
+const JUMP_INPUT_CLASS_NAME = `${CLASS_NAME}-jump`
 const EVENT_NEXT = `${CLASS_NAME}:next`
 const EVENT_SCROLL = 'scroll'
 
@@ -198,7 +199,7 @@ class ButtonMode {
     const arrowButtonClass = getCSS('arrow-button')
     const arrowClass = `${buttonClass} ${arrowButtonClass}`
     const numberClass = `${buttonClass} ${numberButtonClass}`
-    const jumpInput = this.#createElement('input', arrowClass,
+    const jumpInput = this.#createElement('input', `${arrowClass} ${JUMP_INPUT_CLASS_NAME}`,
       { type: 'number', min: 1, step: 1, placeholder: '...' },
       { width: '4rem' })
 

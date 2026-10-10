@@ -15,7 +15,7 @@
   "author": "Kinder0102",
   "main": "./src/index.js",
   "scripts": {
-    "build": "esbuild ./src/index.js --bundle --minify --outfile=./dist/pagination.min.js"
+    "build": "esbuild ./src/index.js --bundle --sourcemap --minify --outfile=./dist/pagination.min.js"
   },
   "dependencies": {
     "js-common": "github:Kinder0102/js-common"
